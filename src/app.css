@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.app {
+  background-image: url("./assets/sunny-cloudy.jpg");
+  background-size: cover;
+  background-position: top;
+  transition: 0.4s ease-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app.warm {
+  background-image: url("./assets/cloudy-evening.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(46, 42, 42, 0.5)
+  );
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
 }
