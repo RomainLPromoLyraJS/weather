@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 // - Local Imports
 import './app.css';
 
-// const dotenv = require('dotenv');
-
 const api = {
   key: process.env.REACT_APP_API_WEATHER_KEY,
   base: "https://api.openweathermap.org/data/2.5/"
